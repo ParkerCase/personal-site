@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started with Three.js</title>
+    <link rel="stylesheet" href="/about.css" />
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
+          "jsm/": "https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body class="page">
+    <div class="page__content">
+      <!-- I will use these to make a frame around all of my info. Each of these will be a wall inside. -->
+      <div class="frame" id="Frame">
+        <div class="frame_line frame_line-left"></div>
+        <div class="frame_line frame_line-right"></div>
+        <div class="frame_line frame_line-top"></div>
+        <div class="frame_line frame_line-bottom"></div>
+      </div>
+
+      <header class="header page__section">
+        <h1 class="profile__title">Parker Case</h1>
+      </header>
+      <main class="content">
+        <section class="profile page__section">
+          <div class="profile__avatar">
+            <nav class="nav">
+              <ul class="nav__links">
+                <li
+                  :class="{ 'is-selected' : $store.app.currentPath === '/' }"
+                  class="is-selected"
+                >
+                  <a class="nav__link nav__link-blue" href="/html/bio.html"
+                    >About</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <p class="nav__description">
+              Parker Case is an adept freelance front-end developer actively
+              seeking opportunities to design and maintain web applications for
+              clientele. Leveraging his programming proficiency, meticulous
+              attention to detail, and keen artistic sensibility, Parker's
+              objective is to craft sophisticated programs that blend visual
+              allure with business efficacy. Parker aims to utilize his
+              expertise to conceive innovative concepts that foster user
+              engagement.
+            </p>
+            <p class="nav__description">
+              Despite his relative youth, Paker has had the privilege of
+              securing numerous exceptional roles in which he has consistently
+              excelled in long-term positions and leadership responsibilities
+              throughout his professional journey. Moreover, his creative
+              pursuits have included the authorship of multiple screenplays
+              recognized at esteemed national and international film festivals,
+              alongside achievements in acting and stand-up comedy.
+              Consistently, Parker has excelled in the online software
+              engineering boot camp at Triple Ten Tech. His unwavering passion
+              for software engineering and writing is complemented by his
+              proclivity for embracing new challenges, such as when he dedicated
+              himself to swimming in a 33-degree lake daily for a month,
+              achieved a 5:30 mile running time, and currently develops fully
+              functional programs within optimized timeframes, proficiently.
+            </p>
+            <p class="nav__description">
+              Continuously striving to actualize his full potential, Parker
+              approaches all undertakings with a positive outlook and sincere
+              gratitude for each bestowed opportunity. Parker is enthusiastic
+              about infusing his passion and optimism into every prospective
+              venture and can't wait to see what he can bring to the table for
+              you.
+            </p>
+            <nav class="nav">
+              <ul class="nav__links">
+                <li
+                  :class="{ 'is-selected': $store.app.currentPath === '/' }"
+                  class="is-selected"
+                >
+                  <a class="nav__link_return-home glowing-border" href="/"
+                    >&#x25c0; Home</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+        <div id="container3D"></div>
+      </main>
+      <footer class="footer">
+        <p class="footer__copyright">©2024 Parker Case Unlimited</p>
+      </footer>
+    </div>
+    <script type="module" src="../index.js"></script>
+  </body>
+</html>

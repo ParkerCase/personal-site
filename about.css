@@ -1,0 +1,258 @@
+.page {
+  background-color: #000;
+  color: #fff;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+.page__section {
+  width: 100%;
+  max-width: 880px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.header {
+  color: #fff;
+  z-index: 2;
+  margin-left: 5%;
+}
+
+.profile {
+  margin-left: 5%;
+}
+
+.profile__title {
+  margin-bottom: 15px;
+  max-width: 420px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: -0.6px;
+  border-bottom: 1px solid #fff;
+  padding: 10px 10px;
+}
+
+.profile__label {
+  margin-top: 0;
+  margin-bottom: 30px;
+  max-width: 240px;
+  font-style: normal;
+  font-family: "Inter", Arial, sans-serif;
+
+  font-weight: 250;
+  font-size: 24px;
+  line-height: 30px;
+  border-bottom: 1px solid #fff;
+  padding: 10px 10px;
+}
+
+.box {
+  margin-left: 5%;
+}
+
+.page__text {
+  margin-left: 5%;
+  color: #fff;
+  z-index: 2;
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.nav {
+  margin-bottom: 50px;
+}
+
+.nav__links {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 22px;
+  line-height: 30px;
+  flex-direction: column;
+}
+
+.nav__link {
+  color: #fff;
+  z-index: 2;
+  position: absolute;
+  text-decoration: none;
+  /* font-size: 26px; */
+  border-bottom: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px 10px;
+  outline: none;
+}
+
+.nav__link-red {
+  border-color: #ff3232;
+  box-shadow: 0 0px 10px #e99eed;
+}
+
+.nav__link-blue {
+  border-color: #32b4ff;
+  box-shadow: 0 0px 10px #9ecded;
+}
+
+.nav__link_return-home {
+  color: #fff;
+  z-index: 2;
+  position: absolute;
+  text-decoration: none;
+  margin-top: 5%;
+  font-size: 16px;
+  font-weight: 250;
+}
+
+.nav__projects {
+  display: flex;
+  color: black;
+  padding: 0;
+  margin: 0;
+  gap: 15px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 275;
+  font-size: 16px;
+  line-height: 30px;
+  flex-direction: column;
+}
+
+.nav__project {
+  color: #fff;
+  z-index: 2;
+  position: absolute;
+  text-decoration: none;
+}
+
+.nav__description {
+  color: #fff;
+  z-index: 2;
+  position: relative;
+  text-decoration: none;
+  max-width: 45%;
+  font-size: 14px;
+  line-height: 1.2;
+  padding-left: 1%;
+  font-weight: 275;
+}
+
+.nav__description-value {
+  color: #fff;
+  z-index: 2;
+  position: relative;
+  text-decoration: none;
+  max-width: 45%;
+  font-size: 13px;
+  padding-left: 1%;
+}
+
+.glowing-border {
+  border-bottom: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.glowing-border:hover {
+  outline: none;
+  border-color: #ff3232;
+  box-shadow: 0 0px 10px #e99eed;
+  opacity: 100%;
+}
+
+.glowing-border-blue {
+  border-bottom: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.glowing-border-blue:hover {
+  outline: none;
+  border-color: #32b4ff;
+  box-shadow: 0 0px 10px #9ecded;
+}
+
+.page__content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer {
+  color: #fff;
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 880px;
+  position: relative;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: 5%;
+}
+
+.footer__copyright {
+  margin: 0;
+  padding-left: 85px;
+  padding-bottom: 40px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 270;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.social__icon {
+  height: 16px;
+  width: 16px;
+  padding: 10px 8px 0px 0px;
+}
+
+#container3D canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .page {
+    margin: 0;
+  }
+
+  .page__section {
+    width: auto;
+  }
+
+  #container3D canvas {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 580px) and (max-width: 905px) {
+  .page__section {
+    width: calc(100% - 50px);
+  }
+
+  #container3D canvas {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

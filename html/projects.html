@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started with Three.js</title>
+    <link rel="stylesheet" href="/about.css" />
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
+          "jsm/": "https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body class="page">
+    <div class="page__content">
+      <!-- I will use these to make a frame around all of my info. Each of these will be a wall inside. -->
+      <div class="frame" id="Frame">
+        <div class="frame_line frame_line-left"></div>
+        <div class="frame_line frame_line-right"></div>
+        <div class="frame_line frame_line-top"></div>
+        <div class="frame_line frame_line-bottom"></div>
+      </div>
+      <header class="header page__section">
+        <h1 class="profile__title">Parker Case</h1>
+      </header>
+      <main class="content">
+        <section class="profile page__section">
+          <div class="profile__avatar">
+            <nav class="nav">
+              <ul class="nav__links">
+                <li
+                  :class="{ 'is-selected' : $store.app.currentPath === '/' }"
+                  class="is-selected"
+                >
+                  <a class="nav__link nav__link-red" href="/html/projects.html"
+                    >Projects</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <nav class="nav">
+              <ul class="nav__projects">
+                <li
+                  :class="{ 'is-selected' : $store.app.currentPath === '/' }"
+                  class="is-selected"
+                >
+                  <a
+                    class="nav__project glowing-border-blue"
+                    href="https://github.com/ParkerCase/se_project_aroundtheus"
+                    >Around the US</a
+                  >
+                </li>
+                <li
+                  :class="{ 'is-selected' : $store.app.currentPath === '/' }"
+                  class="is-selected"
+                >
+                  <a
+                    class="nav__project glowing-border"
+                    href="https://github.com/ParkerCase/se_project_coffeeshop"
+                    >The Coffeeshop</a
+                  >
+                </li>
+                <li
+                  :class="{ 'is-selected' : $store.app.currentPath === '/' }"
+                  class="is-selected"
+                >
+                  <a
+                    class="nav__project glowing-border-blue"
+                    href="https://github.com/ParkerCase/the_library"
+                    >The Library</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <nav class="nav">
+              <ul class="nav__links">
+                <li
+                  :class="{ 'is-selected': $store.app.currentPath === '/' }"
+                  class="is-selected"
+                >
+                  <a class="nav__link_return-home glowing-border" href="/"
+                    >&#x25c0; Home</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+        <div id="container3D"></div>
+      </main>
+      <footer class="footer">
+        <p class="footer__copyright">©2024 Parker Case Unlimited</p>
+      </footer>
+    </div>
+    <script type="module" src="../indextwo.js"></script>
+  </body>
+</html>
