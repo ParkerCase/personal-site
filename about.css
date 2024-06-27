@@ -31,6 +31,7 @@
   line-height: 72px;
   letter-spacing: -0.6px;
   border-bottom: 1px solid #fff;
+  transition: border-width 0.6s linear;
   padding: 10px 10px;
 }
 
@@ -86,7 +87,7 @@
   position: absolute;
   text-decoration: none;
   /* font-size: 26px; */
-  border-bottom: 1px solid #000;
+  border-bottom: 2px solid #657677;
   border-radius: 5px;
   padding: 5px 10px;
   outline: none;
@@ -114,7 +115,7 @@
 
 .nav__projects {
   display: flex;
-  color: black;
+  color: #657677;
   padding: 0;
   margin: 0;
   gap: 15px;
@@ -156,7 +157,7 @@
 }
 
 .glowing-border {
-  border-bottom: 1px solid #000;
+  border-bottom: 2px solid #657677;
   border-radius: 5px;
   padding: 5px 10px;
   transition: opacity 0.3s ease-in-out;
@@ -165,12 +166,13 @@
 .glowing-border:hover {
   outline: none;
   border-color: #ff3232;
-  box-shadow: 0 0px 10px #e99eed;
+  box-shadow: 0 0px 15px #e99eed;
   opacity: 100%;
+  font-size: 18px;
 }
 
 .glowing-border-blue {
-  border-bottom: 1px solid #000;
+  border-bottom: 2px solid #657677;
   border-radius: 5px;
   padding: 5px 10px;
 }
@@ -178,7 +180,8 @@
 .glowing-border-blue:hover {
   outline: none;
   border-color: #32b4ff;
-  box-shadow: 0 0px 10px #9ecded;
+  box-shadow: 0 0px 15px #9ecded;
+  font-size: 18px;
 }
 
 .page__content {

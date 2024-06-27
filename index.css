@@ -83,7 +83,7 @@
 }
 
 .glowing-border {
-  border-bottom: 1px solid #000;
+  border-bottom: 2px solid #657677;
   border-radius: 5px;
   padding: 5px 10px;
 }
@@ -91,11 +91,11 @@
 .glowing-border:hover {
   outline: none;
   border-color: #ff3232;
-  box-shadow: 0 0px 10px #e99eed;
+  box-shadow: 0 0px 15px #e99eed;
 }
 
 .glowing-border-blue {
-  border-bottom: 1px solid #000;
+  border-bottom: 2px solid #657677;
   border-radius: 5px;
   padding: 5px 10px;
 }
@@ -103,7 +103,7 @@
 .glowing-border-blue:hover {
   outline: none;
   border-color: #32b4ff;
-  box-shadow: 0 0px 10px #9ecded;
+  box-shadow: 0 0px 15px #9ecded;
 }
 
 .page__content {

@@ -23,6 +23,8 @@ camera.position.z = 2;
 const scene = new THREE.Scene();
 // the code above allows us to render something. We then pass the function below and can do it.
 
+scene.background = new THREE.Color(0x657677);
+
 // This will allow us to use the clicker to control the ball, but wait it gets better
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
