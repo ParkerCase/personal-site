@@ -233,6 +233,10 @@
     margin: 0;
   }
 
+  .profile__title {
+    max-width: 270px;
+  }
+
   .page__section {
     width: auto;
   }
