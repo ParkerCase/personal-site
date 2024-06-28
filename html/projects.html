@@ -21,13 +21,6 @@
   </head>
   <body class="page">
     <div class="page__content">
-      <!-- I will use these to make a frame around all of my info. Each of these will be a wall inside. -->
-      <div class="frame" id="Frame">
-        <div class="frame_line frame_line-left"></div>
-        <div class="frame_line frame_line-right"></div>
-        <div class="frame_line frame_line-top"></div>
-        <div class="frame_line frame_line-bottom"></div>
-      </div>
       <header class="header page__section">
         <h1 class="profile__title">Parker Case</h1>
       </header>
@@ -36,10 +29,7 @@
           <div class="profile__avatar">
             <nav class="nav">
               <ul class="nav__links">
-                <li
-                  :class="{ 'is-selected' : $store.app.currentPath === '/' }"
-                  class="is-selected"
-                >
+                <li>
                   <a
                     class="nav__link nav__link-red"
                     href="../html/projects.html"
@@ -50,30 +40,21 @@
             </nav>
             <nav class="nav">
               <ul class="nav__projects">
-                <li
-                  :class="{ 'is-selected' : $store.app.currentPath === '/' }"
-                  class="is-selected"
-                >
+                <li>
                   <a
                     class="nav__project glowing-border-blue"
                     href="https://github.com/ParkerCase/se_project_aroundtheus"
                     >Around the US</a
                   >
                 </li>
-                <li
-                  :class="{ 'is-selected' : $store.app.currentPath === '/' }"
-                  class="is-selected"
-                >
+                <li>
                   <a
                     class="nav__project glowing-border"
                     href="https://github.com/ParkerCase/se_project_coffeeshop"
                     >The Coffeeshop</a
                   >
                 </li>
-                <li
-                  :class="{ 'is-selected' : $store.app.currentPath === '/' }"
-                  class="is-selected"
-                >
+                <li>
                   <a
                     class="nav__project glowing-border-blue"
                     href="https://github.com/ParkerCase/the_library"
@@ -84,10 +65,7 @@
             </nav>
             <nav class="nav">
               <ul class="nav__links">
-                <li
-                  :class="{ 'is-selected': $store.app.currentPath === '/' }"
-                  class="is-selected"
-                >
+                <li>
                   <a
                     class="nav__link_return-home glowing-border"
                     href="../index.html"

@@ -21,14 +21,6 @@
   </head>
   <body class="page">
     <div class="page__content">
-      <!-- I will use these to make a frame around all of my info. Each of these will be a wall inside. -->
-      <div class="frame" id="Frame">
-        <div class="frame_line frame_line-left"></div>
-        <div class="frame_line frame_line-right"></div>
-        <div class="frame_line frame_line-top"></div>
-        <div class="frame_line frame_line-bottom"></div>
-      </div>
-
       <header class="header page__section">
         <h1 class="profile__title">Parker Case</h1>
       </header>
@@ -37,10 +29,7 @@
           <div class="profile__avatar">
             <nav class="nav">
               <ul class="nav__links">
-                <li
-                  :class="{ 'is-selected' : $store.app.currentPath === '/' }"
-                  class="is-selected"
-                >
+                <li>
                   <a class="nav__link nav__link-blue" href="../html/bio.html"
                     >About</a
                   >
@@ -49,39 +38,36 @@
             </nav>
             <p class="nav__description">
               Parker Case is a skilled freelance front-end developer with
-              expertise in creating visually appealing and efficient web
-              applications. He aims to utilize his programming proficiency and
-              keen artistic sensibility to foster user engagement and craft
-              sophisticated programs.
+              expertise in creating visually appealing and efficient web apps.
+              He aims to utilize his programming proficiency and keen artistic
+              sensibility to foster user engagement and craft sophisticated
+              programs.
             </p>
             <p class="nav__description">
-              Parker has had the privilege of securing numerous exceptional
-              roles in which he has consistently excelled in long-term positions
-              and leadership responsibilities. Moreover, his creative pursuits
-              have included the authorship of multiple screenplays recognized at
-              esteemed film festivals, alongside achievements in acting and
-              stand-up comedy. Consistently, Parker has excelled in the online
-              software engineering boot camp at Triple Ten Tech. His unwavering
-              passion for software engineering and writing is complemented by
-              his proclivity for embracing new challenges, such as when he
-              dedicated himself to swimming in a 33-degree lake daily for a
-              month, achieved a 5:30 mile running time, and currently develops
-              fully functional programs within optimized timeframes,
-              proficiently.
+              Parker has had the privilege of securing a number of exceptional
+              roles in which he has excelled in long-term positions of
+              leadership responsibilities. His creative pursuits have included
+              the authorship of multiple screenplays recognized at esteemed film
+              festivals, alongside achievements in acting and stand-up comedy.
+              Parker has excelled in, and completed, the online software
+              engineering program at Triple Ten Tech. His unwavering passion for
+              software engineering and writing is complemented by his embrace of
+              new challenges, such as when he committed himself to a month of
+              daily swims in freezing water, accomplished a 5:30 minute mile
+              time, and began developing fully functional programs within
+              optimized timeframes.
             </p>
             <p class="nav__description">
-              Continuously striving to actualize his full potential, Parker
-              approaches all undertakings with a positive outlook and sincere
-              gratitude for each opportunity. Enthusiastic about infusing his
-              passion and optimism into every prospective venture, Parker can't
-              wait to see what he can do for you.
+              Striving for continuous improvement, Parker approaches all
+              undertakings with a positive outlook and sincere gratitude for
+              each opportunity. Enthusiastic about infusing his passion and
+              optimism into every prospective venture, Parker can't wait to see
+              what he can do for you.
             </p>
             <nav class="nav">
               <ul class="nav__links">
-                <li></li>
-                  <a
-                    class="nav__link_return-home glowing-border"
-                    href=".."
+                <li>
+                  <a class="nav__link_return-home glowing-border" href=".."
                     >&#x25c0; Home</a
                   >
                 </li>
